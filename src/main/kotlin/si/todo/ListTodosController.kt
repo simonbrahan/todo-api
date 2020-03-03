@@ -10,7 +10,7 @@ import java.util.Properties
 class ListTodosController {
 
     @GetMapping("/get")
-    fun greeting(): List<Todo> {
+    fun listTodos(): List<Todo> {
         val connectionProps = Properties()
         connectionProps.put("user", "root")
         connectionProps.put("password", "root")
