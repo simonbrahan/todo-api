@@ -11,7 +11,7 @@ import java.util.Properties
 class DeleteTodoController {
 
     @PostMapping("/delete")
-    fun createTodo(@RequestParam(value = "id") id: Long) {
+    fun deleteTodo(@RequestParam(value = "id") id: Long) {
         val connectionProps = Properties()
         connectionProps.put("user", "root")
         connectionProps.put("password", "root")
